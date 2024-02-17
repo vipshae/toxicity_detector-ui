@@ -22,7 +22,7 @@ const callModel = async (path, data) => {
     return res.json;
 }
 
-export async function predict(formData) {
+export async function predict(formData: FormData) {
     const inputText = formData.get('input');
     if(!inputText)  {
         return

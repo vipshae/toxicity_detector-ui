@@ -5,7 +5,6 @@ import { SubmitButton } from "./submit-button";
 import { useRef } from "react";
 import { useFormStatus } from "react-dom";
 
-
 export default function InputTextForm() {
     const { pending } = useFormStatus();
     const ref = useRef(null);
@@ -29,7 +28,7 @@ export default function InputTextForm() {
                     required
                     placeholder="Enter text"
                 />
-                <SubmitButton pending={pending}/>           
+                <SubmitButton pending={pending}/>
             </form>
         </div>
     )
