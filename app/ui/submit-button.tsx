@@ -1,9 +1,9 @@
 'use client'
 
-export function SubmitButton(pending: any) {
+export function SubmitButton(pending: any| Boolean) {
   return (
-    <button type="submit" aria-disabled={pending}>
-      Predict
+    <button type="submit" className="small" aria-disabled={pending}>
+      Predict Toxicity
     </button>
   )
 }

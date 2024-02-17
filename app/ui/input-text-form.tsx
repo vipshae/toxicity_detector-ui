@@ -20,13 +20,12 @@ export default function InputTextForm() {
                     </p>
                 </label>
                 <input
-                    className="peer block w-full rounded-md border border-gray-200 py-[9px] pl-10 text-sm ouline-2"
                     name="input"
                     type="text"
                     id="input"
                     defaultValue=""
                     required
-                    placeholder="Enter text"
+                    placeholder="Enter Input"
                 />
                 <SubmitButton pending={pending}/>
             </form>
